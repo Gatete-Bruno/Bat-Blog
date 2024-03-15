@@ -27,7 +27,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t bruno74t/simple-node .
-          docker tag bruno74t/simple-node:v1 bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
+          docker tag bruno74t/simple-node:latest bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -37,9 +37,9 @@ jobs:
 
       - name: Tag Docker image with timestamp
         run: |
-          docker tag bruno74t/simple-node:v1 bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
+          docker tag bruno74t/simple-node:latest bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
 
       - name: Push Docker image
         run: |
-          docker push bruno74t/simple-node:v1
+          docker push bruno74t/simple-node:latest
           docker push bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
