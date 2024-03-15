@@ -37,4 +37,6 @@ jobs:
 
       - name: Push Docker image with v1 tag
         run: docker push bruno74t/simple-node:v1
+
+     
         
