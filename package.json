@@ -1,11 +1,11 @@
 {
-    "name": "simple-node",
-    "version": "1.0.0",
-    "description": "A sample Docker application",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "author": {"name": "Bruno"}
-  }
-  
+  "name": "simple-node",
+  "version": "1.0.0",
+  "description": "A sample Docker application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'No tests yet'"
+  },
+  "author": {"name": "Bruno"}
+}
