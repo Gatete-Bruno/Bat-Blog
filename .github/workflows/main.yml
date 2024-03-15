@@ -35,6 +35,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD_SYMBOLS_ALLOWED }}
 
+      - name: Tag Docker image with timestamp
+        run: |
+          docker tag bruno74t/simple-node:latest bruno74t/simple-node:$(date +'%Y%m%d%H%M%S')
+
       - name: Push Docker image
         run: |
           docker push bruno74t/simple-node:latest
