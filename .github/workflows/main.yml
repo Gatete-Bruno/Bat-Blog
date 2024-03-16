@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD_SYMBOLS_ALLOWED }}
 
       - name: Push Docker image with v1 tag
-        run: docker push bruno74t/simple-node:v2
+        run: docker push bruno74t/simple-node:v1
 
      
         
